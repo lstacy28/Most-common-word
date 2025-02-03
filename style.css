@@ -1,0 +1,58 @@
+body{
+    font-family: monospace;
+    text-align:center;
+    background: gold;
+  }
+  header{
+    background: gold;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    padding: 15px;
+  }
+  img{
+    cursor: pointer;
+  }
+  
+  
+  .column{
+    text-align: center;
+    border-width: 1px;
+    background: white;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .row {
+    background-color: white;
+    display: flex; 
+    flex-wrap: wrap;
+  }
+  * {
+    box-sizing: border-box;
+     /*The box-sizing CSS property sets how the total width and height of an element is calculated.
+    border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size elements.*/
+  }
+  
+  button{
+    background-color: white;
+    font-family: monospace;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  #Word_1{
+    font-size: 30px; 
+  
+  }
+  #Word_2{
+    font-size: 30px; 
+  }
+
+  #back_to_home{
+    font-size: 50px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    border-color: black;
+  }
