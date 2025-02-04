@@ -1,19 +1,27 @@
 body{
-    font-family: monospace;
-    text-align:center;
-    background-color: rgb(31, 179, 14);
-  }
+  font-family: monospace;
+  text-align:center;
+  background: rgb(31, 179, 14);
+}
   header{
-    background: rgb(23, 229, 23);
+    background: rgb(29, 229, 23);
     text-align: center;
-    font-size: 30px;
+    font-size: 37px;
+    font-family: "Ranga", serif;
+    font-weight: 700;
+    font-style: normal;
     margin-bottom: 10px;
     padding: 15px;
   }
   img{
     cursor: pointer;
   }
-  
+  h2{
+    font-family: "Ranga", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20; 
+  }
   
   .column{
     text-align: center;
@@ -43,13 +51,18 @@ body{
     border: 1px solid;;
   }
   #Word_1{
-    font-size: 30px; 
-    cursor: pointer;
+    font-size: 50px; 
+    font-family: "Ranga", serif;
+    font-weight: 700;
+    font-style: normal;
   
   }
   #Word_2{
-    font-size: 30px; 
-    cursor: pointer;
+    font-size: 50px; 
+    font-family: "Ranga", serif;
+    font-weight: 700;
+    font-style: normal;
+
   }
   #back_to_home{
     font-size: 50px;
@@ -61,5 +74,8 @@ body{
 border: 1px solid;
 margin-inline: auto;
 margin-top: 30px;
+font-size: 20px; 
+font-family: "Ranga", serif;
+font-weight: 500;
   }
 
