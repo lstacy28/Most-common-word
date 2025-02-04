@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>How Rare is the Word</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Ranga:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Ranga:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-	<header>How Rare is the Word</header>
-	<h2>Which word is the rarest per million?</h2>
-
-      <div class="row">
-        <div class="column">
-    
-          <!-- <img onclick="getResults('Ostrich')" src="https://studio.code.org/media?u=https%3A%2F%2Fimages.code.org%2Fc648b49ebf961ba5c114a62483753b30-image-1560785080240.png" width="30%"> -->
-    
-        <p id = "Word_1" onclick = 'ChangePage()'>Word 2</p>
-          </div>
-      <div class="column">
-    <!-- <img onclick="getResults('Word 2')" src="https://studio.code.org/media?u=https%3A%2F%2Fimages.code.org%2Fc648b49ebf961ba5c114a62483753b30-image-1560785080240.png" width="30%"> -->
-    
-    <p id = "Word_2" onclick = 'ChangePage1()'>Word 2</p>
-      </div>
+    <header>How common is your word</header>
+    <label>Length:</label>
+    <input  type="number" min="0" max="14" id="wordCount" value=0> Letters<br><br>
+    <select id="partOfSpeech">
+        <option value="article">article</option>
+        <option value="verb">verb</option>
+        <option value="adverb">adverb</option>
+        <option value="noun">noun</option>
+        <option value="adjective">adjective</option>
+      </select>
+      <br><br><button onclick="console.log(findWord())">Find the most commmon word</button><br>
+        <div class="outputBox" id="outputBox">
+        <p id="output"></p>
     </div>
-    <script src="utils.js"></script>
-    <script src="script.js"></script>
-  
-  </body>
+
+
+</body>
 </html>
+<button id="minigame" onclick="game()">Mini Game</button>
+
+
+<script src="utils.js"></script>
+<script src="script.js"></script>

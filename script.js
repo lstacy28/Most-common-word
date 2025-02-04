@@ -1,40 +1,35 @@
-var url = "https://raw.githubusercontent.com/b-mcavoy/datasets/refs/heads/main/Language%20%26%20Literature/Words.csv"
+
+function findWord(){
+var url = "https://raw.githubusercontent.com/b-mcavoy/datasets/refs/heads/main/Language%20%26%20Literature/Words.csv";
 var word = getColumn(url, 1);
 var speech = getColumn(url, 2);
 var frequency = getColumn(url, 3);
-var length = getColumn(url,4);
+var length = getColumn(url, 4);
 
-    function ChangePage(){
-    for (var i = 0; i < word.length; i++){
-        if(frequency[place] > frequency[place2]){
-            window.location.href = ("correct.html");
-        }
-        if(frequency[place] <= frequency[place2]){
-            window.location.href = ("wrong.html");
-        }
-    }
-        
-    }
+var wordCount = parseFloat(document.getElementById("wordCount").value);
+var partOfSpeech = document.getElementById("partOfSpeech").value;
 
-    function ChangePage1(){
-        for (var i = 0; i < word.length; i++){
-            if(frequency[place] > frequency[place2]){
-                window.location.href = "wrong.html";
-            }
-            if(frequency[place] <= frequency[place2]){
-                window.location.href = ("correct.html");
-            }
-        }
+
+console.log(wordCount)
+console.log(partOfSpeech)
+
+var counter = 1
+var result = []
+for(var i = 0; i < word.length; i++){
+    if(speech[i].includes(partOfSpeech) && parseFloat(length[i]) == wordCount && counter < 2){
+        result.push(word[i])
+        counter++
     }
 
+}
 
-  
- 
-var place = Math.floor(Math.random()*word.length);
-var place2 = Math.floor(Math.random()*word.length);
+console.log(result)
+document.getElementById("outputBox").innerHTML = result;
+}
 
-console.log(place);
+function game(){    
+    location.replace("minigame.html");
+}
 
 
-document.getElementById("Word_1").innerHTML = word[place];
-document.getElementById("Word_2").innerHTML = word[place2];
+

@@ -1,74 +1,75 @@
 body{
-    font-family: monospace;
-    text-align:center;
-    background: rgb(31, 179, 14);
-  }
-  header{
-    background: rgb(29, 229, 23);
-    text-align: center;
-    font-size: 37px;
-    font-family: "Ranga", serif;
-    font-weight: 700;
-    font-style: normal;
-    margin-bottom: 10px;
-    padding: 15px;
-  }
-  img{
-    cursor: pointer;
-  }
-  
-  h2{
-    font-family: "Ranga", serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 20; 
-  }
-  
-  .column{
-    text-align: center;
-    border-width: 1px;
-    background: white;
-    width: 50%;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .row {
-    background-color: white;
-    display: flex; 
-    flex-wrap: wrap;
-  }
-  * {
-    box-sizing: border-box;
-     /*The box-sizing CSS property sets how the total width and height of an element is calculated.
-    border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size elements.*/
-  }
-  
-  button{
-    background-color: white;
-    font-family: monospace;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-  }
-  #Word_1{
-    font-size: 50px; 
-    font-family: "Ranga", serif;
-    font-weight: 700;
-    font-style: normal;
-  
-  }
-  #Word_2{
-    font-size: 50px; 
-    font-family: "Ranga", serif;
-    font-weight: 700;
-    font-style: normal;
+  background-color: rgb(31, 179, 14);
+  font-family: "Ranga", serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
 
-  }
 
-  #back_to_home{
-    font-size: 50px;
-    background-color: antiquewhite;
-    border-radius: 5px;
-    border-color: black;
-  }
+.outputBox{
+  min-height: 25px;
+  width: 300px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  background-color: white;
+  padding: 5px;
+  font-size: 60px;
+  border: 1px solid;
+  margin-inline: auto;
+  
+
+ 
+
+}
+button{
+  background-color: white;
+  padding: 10px;
+  font-family: "Ranga", serif;
+  font-weight: 700;
+  font-size: larger;
+  border: 1px solid;
+  /* make an outline */
+  
+}
+
+header{
+  background: rgb(23, 229, 23);
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 37px;
+      font-family: "Ranga", serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+    
+    
+
+select{
+  padding: 10px;
+  cursor: pointer;
+  font-family: "Ranga", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: large;
+  
+}
+
+input{
+  padding: 5px;
+  width: 30px;
+  font-family: "Ranga", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: large;
+}
+#minigame{
+  background-color: white;
+  padding: 10px;
+  margin-top: 20px;
+  font-family: "Ranga", serif;
+  font-weight: 700;
+  border: 1px solid;
+  /* make an outline */
+
+}
