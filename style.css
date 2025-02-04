@@ -29,6 +29,7 @@ button{
   font-weight: 700;
   font-size: larger;
   border: 1px solid;
+  cursor: pointer;
   /* make an outline */
   
 }
@@ -70,6 +71,7 @@ input{
   font-family: "Ranga", serif;
   font-weight: 700;
   border: 1px solid;
+  cursor: pointer;
   /* make an outline */
 
 }
