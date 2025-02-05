@@ -14,13 +14,6 @@ var partOfSpeech = document.getElementById("partOfSpeech").value;
 console.log(wordCount)
 console.log(partOfSpeech)
 
-// The counter acts as an example of reducing the list to one word
-// var result = []
-// for(var i = 0; i < word.length; i++){
-//     if(speech[i].includes(partOfSpeech) && parseFloat(length[i]) == wordCount && result.length == 0){
-//         result.push(word[i])
-//     }
-// }
 var i = 0
 var result = []
 while(result.length == 0 && i < word.length){
