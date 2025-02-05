@@ -55,6 +55,7 @@ body{
     font-family: "Ranga", serif;
     font-weight: 700;
     font-style: normal;
+    cursor: pointer;
   
   }
   #Word_2{
@@ -62,6 +63,7 @@ body{
     font-family: "Ranga", serif;
     font-weight: 700;
     font-style: normal;
+    cursor: pointer;
 
   }
   #back_to_home{

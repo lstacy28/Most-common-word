@@ -1,4 +1,5 @@
-
+// ORIGNAL SOURCE:https://github.com/b-mcavoy/datasets/blob/main/Language%20%26%20Literature/Words.csv
+// This function makes it so everthing inside of it will only run when the "find the most common word" button is pressed
 function findWord(){
 var url = "https://raw.githubusercontent.com/b-mcavoy/datasets/refs/heads/main/Language%20%26%20Literature/Words.csv";
 var word = getColumn(url, 1);
@@ -13,23 +14,29 @@ var partOfSpeech = document.getElementById("partOfSpeech").value;
 console.log(wordCount)
 console.log(partOfSpeech)
 
-var counter = 1
+// The counter acts as an example of reducing the list to one word
+// var result = []
+// for(var i = 0; i < word.length; i++){
+//     if(speech[i].includes(partOfSpeech) && parseFloat(length[i]) == wordCount && result.length == 0){
+//         result.push(word[i])
+//     }
+// }
+var i = 0
 var result = []
-for(var i = 0; i < word.length; i++){
-    if(speech[i].includes(partOfSpeech) && parseFloat(length[i]) == wordCount && counter < 2){
-        result.push(word[i])
-        counter++
+while(result.length == 0 && i < word.length){
+    if(speech[i].includes(partOfSpeech) && parseFloat(length[i]) == wordCount){
+        result.push(word[i]) 
     }
-
+    i++
 }
+    
+
 
 console.log(result)
 document.getElementById("outputBox").innerHTML = result;
 }
 
+// Once the "game" function is activated your location gets replaced with "minigame.html"
 function game(){    
     location.replace("minigame.html");
 }
-
-
-
