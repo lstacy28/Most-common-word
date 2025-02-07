@@ -3,7 +3,8 @@ var word = getColumn(url, 1);
 var speech = getColumn(url, 2);
 var frequency = getColumn(url, 3);
 var length = getColumn(url,4);
-// // This funciton changes the page to send it to either the correct html or wrong html for Word 1
+// // This function runs a "for" loop that searches a dataset for the frequency of a randomly generated word.
+// depending on which frequency is higher, you can use the 2 parameters to choose which destination you should be sent to.
     function changePage(destination1,destination2){
         for (var i = 0; i < word.length; i++){
             if(frequency[place] > frequency[place2]){

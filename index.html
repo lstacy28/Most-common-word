@@ -12,7 +12,7 @@
 <body>
     <header>Find the most common words?</header>
     <label>Length:</label>
-    <input  type="number" min="0" max="14" id="wordCount" value=0> Letters<br><br>
+    <input type="number" min="0" max="14" id="wordCount" value=0> Letters</div><br><br>
     <select id="partOfSpeech">
         <option value="article">article</option>
         <option value="verb">verb</option>
@@ -22,14 +22,12 @@
       </select>
       <!-- This button activates the "findword" function -->
       <br><br><button onclick="console.log(findWord())">Find the most commmon word</button><br>
-        <div class="outputBox" id="outputBox"></p>
+    <div class="outputBox" id="outputBox"></p>
     </div>
-
-
 </body>
 </html>
-	<!-- When the button is clicked the "changefLocation" function sends you to a selected html -->
-    <button id="minigame" onclick="changefLocation('minigame.html')">Mini Game</button>
+<!-- When the button is clicked the "changefLocation" function sends you to a selected html -->
+<button id="minigame" onclick="changefLocation('minigame.html')">Mini Game</button>
 <script>
     // The changefLocation function takes your desired location in as a parameter, and then executes code that changes your html.
     function changefLocation(location){

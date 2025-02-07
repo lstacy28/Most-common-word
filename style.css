@@ -5,8 +5,6 @@ body{
   font-style: normal;
   text-align: center;
 }
-
-
 .outputBox{
   min-height: 25px;
   width: 300px;
@@ -17,10 +15,6 @@ body{
   font-size: 60px;
   border: 1px solid;
   margin-inline: auto;
-  
-
- 
-
 }
 button{
   background-color: white;
@@ -30,22 +24,16 @@ button{
   font-size: larger;
   border: 1px solid;
   cursor: pointer;
-  /* make an outline */
-  
 }
-
 header{
   background: rgb(23, 229, 23);
   padding: 10px;
   margin-bottom: 10px;
   font-size: 37px;
-      font-family: "Ranga", serif;
-      font-weight: 700;
-      font-style: normal;
-    }
-    
-    
-
+  font-family: "Ranga", serif;
+  font-weight: 700;
+  font-style: normal;
+}
 select{
   padding: 10px;
   cursor: pointer;
@@ -53,9 +41,7 @@ select{
   font-weight: 700;
   font-style: normal;
   font-size: large;
-  
 }
-
 input{
   padding: 5px;
   width: 30px;
@@ -72,6 +58,4 @@ input{
   font-weight: 700;
   border: 1px solid;
   cursor: pointer;
-  /* make an outline */
-
 }

@@ -11,9 +11,6 @@ var wordCount = parseFloat(document.getElementById("wordCount").value);
 var partOfSpeech = document.getElementById("partOfSpeech").value;
 
 
-console.log(wordCount)
-console.log(partOfSpeech)
-
 var i = 0
 var result = ""
 var counter = 0;
@@ -38,10 +35,9 @@ if(wordCount > 14){
 }
 }
 
-    
-
-
-console.log(result)
+console.log("wordCount: "+wordCount);
+console.log("partOfSpeech: "+partOfSpeech);  
+console.log("Words: "+result);  
 document.getElementById("outputBox").innerHTML = result;
 }
 
