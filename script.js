@@ -1,5 +1,5 @@
 // ORIGNAL SOURCE:https://github.com/b-mcavoy/datasets/blob/main/Language%20%26%20Literature/Words.csv
-// This function makes it so everthing inside of it will only run when the "find the most common word" button is pressed
+// This function makes it so everthing inside of it will only run when the a button is pressed
 function findWord(){
 var url = "https://raw.githubusercontent.com/b-mcavoy/datasets/refs/heads/main/Language%20%26%20Literature/Words.csv";
 var word = getColumn(url, 1);
@@ -15,13 +15,29 @@ console.log(wordCount)
 console.log(partOfSpeech)
 
 var i = 0
-var result = []
-while(result.length == 0 && i < word.length){
+var result = ""
+var counter = 0;
+// I am reducing the amount of words to one by only finding the first word that meets the criteria
+while(counter < 3 && i < word.length){
+// I am using "parceFloat" to transform all of the numbers in a list to numbers that my code can use easier
     if(speech[i].includes(partOfSpeech) && parseFloat(length[i]) == wordCount){
-        result.push(word[i]) 
+        // This is filtering which words to use and then adding them to a list
+        result = result + word[i]+", ";
+        counter++
     }
     i++
 }
+if(result.length == 0){
+
+if(wordCount > 14){
+    result = "!No words found above 14 letters!";
+} else if(wordCount < 1){
+    result = "!No words found below 1 letter!";
+}else{
+    result = "!No words found!";
+}
+}
+
     
 
 
@@ -29,7 +45,8 @@ console.log(result)
 document.getElementById("outputBox").innerHTML = result;
 }
 
-// Once the "game" function is activated your location gets replaced with "minigame.html"
-function game(){    
-    location.replace("minigame.html");
-}
+
+
+
+
+

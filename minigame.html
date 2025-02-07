@@ -13,27 +13,27 @@
 
 <body>
 	<header>How Rare is the Word</header>
-	<h2>Which word is the rarest per million?</h2>
+	<h2>Which word is the rarest per million words?</h2>
 
       <div class="row">
         <div class="column">
     
           <!-- <img onclick="getResults('Ostrich')" src="https://studio.code.org/media?u=https%3A%2F%2Fimages.code.org%2Fc648b49ebf961ba5c114a62483753b30-image-1560785080240.png" width="30%"> -->
     
-        <p id = "Word_1" onclick = 'ChangePage()'>Word 2</p>
+        <p id = "Word_1" onclick = 'changePage("wrong.html","correct.html")'>Word 2</p>
           </div>
       <div class="column">
     <!-- <img onclick="getResults('Word 2')" src="https://studio.code.org/media?u=https%3A%2F%2Fimages.code.org%2Fc648b49ebf961ba5c114a62483753b30-image-1560785080240.png" width="30%"> -->
     
-    <p id = "Word_2" onclick = 'ChangePage1()'>Word 2</p>
+    <p id = "Word_2" onclick = 'changePage("correct.html","wrong.html")'>Word 2</p>
       </div></div>
 
-      <!-- When the "home" button is pressed the "retry" function sends you to a selected html -->
-      <button id="home" onclick="retry()">Home</button>
-      <script>
-      function retry(){
-      window.location.href = ("index.html")};
-      </script>
+      <button id="home" onclick="changefLocation('index.html')">Home</button>
+<script>
+	// The changefLocation function takes your desired location in as a parameter, and then executes code that changes your html.
+  function changefLocation(location){
+  window.location.href = (location)};
+</script>
     </body>
     </html>
     <script src="utils.js"></script>

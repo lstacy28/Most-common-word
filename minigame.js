@@ -4,32 +4,16 @@ var speech = getColumn(url, 2);
 var frequency = getColumn(url, 3);
 var length = getColumn(url,4);
 // // This funciton changes the page to send it to either the correct html or wrong html for Word 1
-    function ChangePage(){
-    for (var i = 0; i < word.length; i++){
-        if(frequency[place] > frequency[place2]){
-            window.location.href = ("wrong.html");
-        }
-        if(frequency[place] <= frequency[place2]){
-            window.location.href = ("correct.html");
-        }
-    }
-        
-    }
-// THis function changes the page to send it to either the correct html or wrong html for Word 2
-    function ChangePage1(){
+    function changePage(destination1,destination2){
         for (var i = 0; i < word.length; i++){
             if(frequency[place] > frequency[place2]){
-                window.location.href = ("wrong.html");
+                changefLocation(destination1);
             }
             if(frequency[place] <= frequency[place2]){
-                window.location.href = ("correct.html");
+                changefLocation(destination2);
             }
         }
     }
-
-
-  
- 
 var place = Math.floor(Math.random()*word.length);
 var place2 = Math.floor(Math.random()*word.length);
 
@@ -38,3 +22,5 @@ console.log(word[place2]+": "+place2);
 
 document.getElementById("Word_1").innerHTML = word[place];
 document.getElementById("Word_2").innerHTML = word[place2];
+
+

@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Ranga:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>How common is your word</header>
+    <header>Find the most common words?</header>
     <label>Length:</label>
     <input  type="number" min="0" max="14" id="wordCount" value=0> Letters<br><br>
     <select id="partOfSpeech">
@@ -28,8 +28,13 @@
 
 </body>
 </html>
-<!-- when the MiniGame butten is clicked the funciton "game" activates -->
-<button id="minigame" onclick="game()">Mini Game</button>
+	<!-- When the button is clicked the "changefLocation" function sends you to a selected html -->
+    <button id="minigame" onclick="changefLocation('minigame.html')">Mini Game</button>
+<script>
+    // The changefLocation function takes your desired location in as a parameter, and then executes code that changes your html.
+    function changefLocation(location){
+    window.location.href = (location)};
+</script>
 
 
 <script src="utils.js"></script>

@@ -10,12 +10,11 @@
 	<header>How Rare is the Word</header>
 	<h2>Which word is the rarest?</h2>
 	<h2>INCORRECT...</h2>
-	<!-- When the "retry" button is pressed the "retry" function sends you to a selected html -->
-<button onclick="retry()">Try Again</button>
-    <script >
-		 function retry(){
-			window.location.href = ("minigame.html");
-  }
-	</script>
+<button onclick="changefLocation('minigame.html')">Try Again</button>
 </body>
+<script>
+	// The changefLocation function takes your desired location in as a parameter, and then executes code that changes your html.
+function changefLocation(location){
+window.location.href = (location)};
+</script>
 </html>
